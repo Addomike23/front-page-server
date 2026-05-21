@@ -56,8 +56,7 @@ app.use(helmet()); // Security headers
    CORS Configuration
 ======================= */
 const allowedOrigins = [
-  "https://www.nayasuccessaxis.com",
-  "https://foodorderio.vercel.app",
+  "https://frontpageelectronics.vercel.app",
   "http://localhost:5173"
 ];
 
