@@ -82,7 +82,8 @@ const productValidator = joi.object({
     name: joi.string().min(2).max(200),
     status: joi.string().min(2).max(200),
     size: joi.string().min(2).max(200),
-    description: joi.string().min(10).max(500)
+    description: joi.string().min(10).max(500),
+    brand: joi.string().min(2).max(100)
 }).min(1); // at least one field required
 
 // Order validator

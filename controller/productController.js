@@ -37,7 +37,7 @@ exports.createProduct = async (req, res) => {
   try {
     await connectDB();
 
-    const { name, status, size, category, description, price } = req.body;
+    const { name, status, size, category, description, price, brand } = req.body;
 
     // Convert price to number
     const numericPrice = parseFloat(price);
@@ -48,7 +48,8 @@ exports.createProduct = async (req, res) => {
       size,
       category,
       description,
-      price: numericPrice
+      price: numericPrice,
+      brand
     });
 
     if (error) {

@@ -39,6 +39,10 @@ const productSchema = new mongoose.Schema({
         required: true,
         min: 0
     },
+    brand: {
+        type: String,
+        required: true
+    },
     // For recommendation engine
     popularityScore: {
         type: Number,
