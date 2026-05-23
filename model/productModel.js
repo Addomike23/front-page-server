@@ -28,7 +28,8 @@ const productSchema = new mongoose.Schema({
     },
     size: {
         type: String,
-        required: true
+        required: false,
+        trim: true
     },
     description: {
         type: String,
@@ -41,7 +42,8 @@ const productSchema = new mongoose.Schema({
     },
     brand: {
         type: String,
-        required: true
+        required: false,
+        trim: true
     },
     // For recommendation engine
     popularityScore: {
